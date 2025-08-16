@@ -1,7 +1,0 @@
-fastapi
-uvicorn[standard]
-websockets
-pydantic
-PyPDF2
-pillow
-pytesseract
