@@ -1,0 +1,18 @@
+{
+  "name": "my-ai-api",
+  "version": "1.0.0",
+  "description": "Custom AI API using open source models (chat, OCR, image caption, TTS)",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "body-parser": "^1.20.2",
+    "@xenova/transformers": "^2.14.0",
+    "tesseract.js": "^5.0.5",
+    "coqui-tts": "^0.0.19"
+  }
+}
+
