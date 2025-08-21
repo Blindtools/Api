@@ -1,17 +1,10 @@
-# Use a Node.js base image
-FROM node:19-alpine
+FROM node:16-alpine
 
-# Set the working directory
+ENV API_HOST=0.0.0.0
 WORKDIR /app
-
-# Copy source code
 COPY . .
 
-# Install dependencies
 RUN npm install
+EXPOSE 3000
 
-# Expose the port the app runs on
-EXPOSE 3040
-
-# Command to run the start script
-CMD ["sh", "start.sh"]
+CMD ["npm", "run", "start"]
